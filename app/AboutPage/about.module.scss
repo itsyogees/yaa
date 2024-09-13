@@ -1,0 +1,230 @@
+.about {
+    width: 100%;
+    padding-top: 85px;
+   
+    position: relative;
+    background-color: var(--ogbackground-color) ;
+    
+    .aboutContainer {
+       
+      width: 85%;
+      margin: 0 auto;
+      padding: 80px 0;
+      .aboutContent { 
+        display: flex;
+        justify-content: space-between;
+        .aboutImg, .aboutText{
+           
+        }
+        .aboutImg{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 100%;
+                padding: 10px;
+                height: auto;
+                border-radius: 50px;
+            }
+        }
+        .aboutText{
+            p{
+                font-size: 16px;
+                font-weight: 500;
+                color: var(--primary-color);
+                padding: 0 0 22px;
+                text-transform: uppercase;
+            }
+        }
+        .aboutTextTitle{
+            h1{
+                font-size: 3rem;
+                margin: 0;
+                font-weight: 550;
+                line-height: 66px;
+                color: var(--text-color);
+                margin-bottom: 20px;
+            }
+        }
+        .aboutTextContent{
+            p{
+                padding: 21px 0 18px;
+                color: var(--subtext-color);
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 2;
+                text-align: left;
+            }
+        }
+        .aboutTextPoints{
+            padding: 30px 15px;
+       display: flex;
+        .aboutTextPoint {
+         
+
+            ul {
+              list-style: none;  
+              padding: 0;  
+          
+              li {
+                position: relative;  
+                color: var(--text-color);  
+                margin-bottom: 10px;  
+                font-size: 1.2rem;
+                &::before {
+                  content: "";  
+                  position: absolute;
+                  left: -20px;  
+                  top: 50%;  
+                  transform: translateY(-50%); 
+                  width: 10px;  
+                  height: 10px;  
+                  border-radius: 50%;  
+                  background-color: var(--primary-color);  
+                }
+              }
+            }
+          }
+        }
+        .aboutBtn{
+            margin-top: 30px;
+            .moreAbout {
+               
+                text-decoration: none;
+                padding: 16px 3rem;
+                font-size: 18px;
+                background-color: var(--primary-color);
+                color: var(--commantext-color);
+                border-radius: 20px;
+                border: none;
+                outline: none;
+                transition: background-color 0.3s ease, transform 0.2s ease;  
+                &:hover {
+                  background-color: var(--bg-color);  
+                  transform: scale(1.05); 
+                }
+              }
+              
+        }
+          
+      }
+    }
+    .aboutCards {
+        width: 85%;
+        margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+  
+      .aboutCard {
+        background-color: var(--card-color);
+        padding: 20px;
+        border-radius: 10px;
+      margin-bottom: 20px;
+        border: 2px solid var(--commantext-color);
+  .aboutHead{
+    display: flex;
+ 
+    gap: 10px;
+    .aboutIcon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--card-color);
+        padding: 1rem;
+        border-radius: 50%;
+        border: 2px solid var(--commantext-color);
+        
+    }
+    .aboutTitle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        //   margin-bottom: 10px;
+          color: var(--bg-color);
+        }
+  
+        p {
+        //   margin-bottom: 20px;
+          color: var(--subtext-color);
+          font-weight: 300;
+          padding: 20px;
+          text-align: start;
+          line-height: 2;
+          display: inline-block;
+        //   border-bottom: 1px solid var(--commantext-color);
+        }
+  .servieReadmore{
+   text-align: start;
+    .learnMoreBtn {
+         
+        font-size: 15px;
+        color: var(--subtext-color);
+      text-decoration: none;
+        text-align: start;
+      &:hover {
+       color: var(--bg-color);
+      }
+    }
+  }
+        
+      }
+    }
+    @media screen and (min-width: 300px) {
+        .aboutContent{
+            flex-direction: column;
+            .aboutImg , .aboutText{
+                width: 100%;
+            }
+            .aboutTextPoints{
+                flex-direction: column;
+                .aboutTextPoint{
+                    width: 100%;
+                }
+            }
+        }
+        .aboutCards{
+            flex-direction: column;
+        }
+    }
+    @media screen and (min-width: 600px) {
+        .aboutContent{
+            flex-direction: column;
+            .aboutImg , .aboutText{
+                width: 100%;
+            }
+            .aboutTextPoints{
+                flex-direction: column;
+                .aboutTextPoint{
+                    width: 100%;
+                }
+            }
+        }
+        .aboutCards{
+            flex-direction: column;
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        .aboutContent{
+            flex-direction: row;
+            .aboutImg , .aboutText{
+                width: calc(50% - 20px);
+            }
+            .aboutTextPoints{
+                flex-direction: row;
+                .aboutTextPoint{
+                    width: calc(50% - 20px);
+                }
+            }
+        }
+        .aboutCards{
+            flex-direction: row;
+        }
+    }
+  }
+  

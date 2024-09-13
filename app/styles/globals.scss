@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #0070f3;
+  --bg-color:#005bb5;
+  --ogbackground-color:#e6f1ff;
+  --secondary-color: #1c1c1e;
+  --background-color: #f0f0f0;
+  --commantext-color:#ffffff;
+  --text-color: #002570;
+  --subtext-color:#65677a;
+  --accent-color: #4d6ca6;
+  --card-color:#eef5ff;
+  --span-color:#666;
+  --nav-color:#d4e5f9;
+  --search-color:#c3d9f5;
+  --footerP-color:#97a9bf;
+}
+.heroSection {
+  background-image: url("../../public/image/hero-bg.png"); 
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--commantext-color);
+  text-align: center;
+
+  .heroSectionContent {
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+
+      a {
+        color: var(--commantext-color);
+        text-decoration: none;
+        position: relative;
+        display: inline-block;
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          bottom: -2px;
+          left: 0;
+          background-color: var(--commantext-color);
+          visibility: hidden;
+          transform: scaleX(0);
+          transition: all 0.3s ease-in-out;
+        }
+
+        &:hover::after {
+          visibility: visible;
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+}
+

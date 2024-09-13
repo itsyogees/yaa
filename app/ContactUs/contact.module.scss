@@ -1,0 +1,187 @@
+.contact {
+  width: 100%;
+  padding-top: 85px;
+ 
+  position: relative;
+  background-color: var(--ogbackground-color);
+
+  
+
+  .contactContainer {
+    background-image: url("/image/contactImage.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px 0px;
+    //border-radius: 30px;
+    display: flex;
+    margin-bottom: 5%;
+    background-color: var(--ogbackground-color);
+    justify-content: center;
+    .contactForm {
+     // width: 100%;
+      padding: 20px;
+    //   margin-left:50%;
+
+      .contactContent {
+        p {
+          font-size: 1.2rem;
+          color: var(--text-color);
+          margin-bottom: 2%;
+        //   padding: 20px;
+        }
+      }
+
+      .contactFormContent {
+        .formContent {
+          display: flex;
+          flex-wrap: wrap;
+
+          ::placeholder {
+            color: var(--text-color);
+            font-size: 15px;
+          }
+
+          input {
+            font-size: 16px;
+            width: 45%;
+            padding: 15px;
+            margin-bottom: 10px;
+            outline: none;
+            border: 1px solid var(--text-color);
+            border-radius: 15px;
+            margin: 2%;
+            background-color: var(--ogbackground-color);
+          }
+
+          textarea {
+            font-size: 16px;
+            margin-bottom: 10px;
+            width: 93%;
+            padding: 8px;
+            border: 1px solid var(--text-color);
+            height: 150px;
+            resize: vertical;
+            outline: none;
+            border-radius: 15px;
+            margin: 2%;
+            background-color: var(--ogbackground-color);
+          }
+        }
+
+        button {
+         
+          font-size: 20px;
+          padding: 12px;
+          background-color: var( --primary-color);
+          color: var(--commantext-color);
+          border: none;
+          border-radius: 20px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          margin-left: 70%;
+          margin-top: 2%;
+        }
+      }
+    }
+  }
+  
+  .contactCardContainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+   width: 85%;
+   margin: 0 auto;
+    padding-bottom: 20px;
+
+      .contactCard{
+       
+        border:2px solid var(--commantext-color);
+        padding:20px ;
+       
+        border-radius: 10px;
+
+        .contactCardHead{
+          display: flex;
+
+          h5{
+            color: var(--span-color);
+            font-size: 18px;
+          }
+          span{
+            margin-left:65% ;
+          }
+        }
+        
+        .contactCardDetails{
+          padding-top: 30px;
+          padding-bottom: 10px;
+          border-top:2px solid var(--commantext-color);
+
+          h5{
+            font-size: 20px;
+            color: var(--text-color);
+            padding: 10px 0px;
+          }
+
+          p{
+            font-size: 18px;
+          }
+        }
+
+      }
+
+
+    }
+
+    .mapContainer{
+      iframe{
+        margin:3%;
+        width: 94%;
+      }
+      
+    }
+
+    @media screen and (min-width : 300px) {
+        .contactForm{
+            margin-left: 0;
+            padding: 20px;
+        }
+    .contactCardContainer{
+        flex-direction: column;
+        .contactCard{
+            width: 100%;
+        }
+    }
+    }
+    @media screen and (min-width : 600px) {
+        .contactForm{
+            margin-left: 0;
+            padding: 20px;
+        }
+        .contactCardContainer{
+            flex-direction: column;
+            .contactCard{
+                width: 100%;
+            }
+        }
+        .formBtn{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    @media screen and (min-width : 1024px) {
+        .contactForm{
+            margin-left: 50%;
+            padding: 20px;
+        }
+        .contactCardContainer{
+            flex-direction: row;
+            .contactCard{
+                width: calc(33.33% - 20px);
+            }
+        }
+    }
+}
+

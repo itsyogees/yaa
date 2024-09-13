@@ -1,0 +1,116 @@
+.service {
+    width: 100%;
+    padding-top: 85px;
+  
+    position: relative;
+    background-color: var(--ogbackground-color) ;
+    
+    .serviceContainer {
+       
+      
+      .serviceContent {
+        padding: 80px 0;
+        .serviceCards {
+            width: 85%;
+            margin: 0 auto;
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          
+      
+          .card {
+            background-color: var(--card-color);
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid var(--commantext-color);
+      .serviceHead{
+        display: flex;
+     
+        gap: 10px;
+        .serviceIcon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--card-color);
+            padding: 1rem;
+            border-radius: 50%;
+            border: 2px solid var(--commantext-color);
+            
+        }
+        .serviceTitle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+      }
+            h3 {
+                font-size: 1rem;
+                font-weight: 700;
+              margin-bottom: 10px;
+              color: var(--text-color);
+            }
+      
+            p {
+              margin-bottom: 20px;
+              color: var(--subtext-color);
+              font-weight: 300;
+              padding: 25px 0 32px;
+              text-align: start;
+              line-height: 2;
+              display: inline-block;
+              border-bottom: 1px solid var(--commantext-color);
+            }
+      .servieReadmore{
+       
+        .learnMoreBtn {
+             
+            font-size: 15px;
+            color: var(--subtext-color);
+          text-decoration: none;
+            text-align: start;
+          &:hover {
+           color: var(--text-color);
+          }
+        }
+      }
+            
+          }
+        }
+      
+      
+        @media screen and (min-width : 300px) {
+            .serviceCards{
+                flex-direction: column;
+                .card{
+                    width: 100%;
+                    .serviceIcon{
+                        img{
+                            width: 25px;
+                            height: 25px;
+                        }
+    
+                    }
+                }
+            }
+        }
+        @media screen and (min-width : 600px) {
+            .serviceCards{
+                flex-direction: column;
+                .card{
+                    width: 100%;
+                }
+            }
+        }
+        @media screen and (min-width : 1024px) {
+            .serviceCards{
+                flex-direction: row;
+                flex-wrap: wrap;
+                .card{
+                    width: calc(33.33% - 20px);
+                }
+            }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,153 @@
+.career {
+    width: 100%;
+    padding-top: 85px;
+   
+    position: relative;
+    background-color: var(--ogbackground-color) ;
+    
+    
+    .careerContainer {
+     padding: 80px 0;
+  width: 85%;
+  margin: 0 auto;
+      .careerContent {
+       h1{
+        text-align: center;
+        color: var(--text-color);
+        font-size: 2rem;
+        padding: 20px;
+        
+       }
+       p{
+        text-align: center;
+        color: var(--subtext-color);
+       }
+      }
+      .careerCards{
+        display: flex;
+        padding: 30px 20px;
+        gap: 20px;
+        .careerCard{
+          
+            padding: 20px;
+            text-align: center;
+            border: 2px solid var(--commantext-color);
+            border-radius: 10px;
+            background-color: var(--card-color);
+            img, h3, p{
+                margin-bottom: 20px;
+            }
+            img{
+                width: 100px;
+                height: 100px;
+            }
+            h3{
+                font-size: 1.5rem;
+                font-weight: 300;
+                color: var(--text-color);
+            }
+            p{
+               color:var(--subtext-color) ; 
+            }
+        }
+      }
+      .careerHiring{
+        .careerHireHead{
+            text-align: center;
+            padding: 40px 0;
+            h1{
+                color: var(--text-color);
+            }
+        }
+        .careerHireContent {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;  
+            padding: 2rem 1rem;  
+          
+            .hiring {
+              width: 95%;
+              margin: 0 auto;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 1.5rem;
+              border: 2px solid var(--commantext-color);
+              border-radius: 8px;
+              background-color: var(--card-color);
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          
+              .hireRole,
+              .hireLocation,
+              .hireApply {
+                flex: 1;
+                text-align: start;
+              }
+              .hireRole, .hireLocation{
+                p,h3{
+                    color:var(--text-color)
+                }
+              }
+          
+              .hireApply {
+                cursor: pointer;
+                color: var(--primary-color);
+                font-weight: bold;
+          
+                &:hover {
+                  text-decoration: underline;
+                }
+                .hireApply{
+                   text-align: center;
+                }
+              }
+            }
+          
+            @media (max-width: 768px) {
+              .hiring {
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+          
+                .hireRole,
+                .hireLocation,
+                .hireApply {
+                  width: 100%;
+                  margin-bottom: 1rem;
+                }
+          
+                .hireApply {
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+          
+      }
+    }
+    @media screen and (min-width:300px) {
+        .careerCards{
+            flex-direction: column;
+            .careerCard{
+                width: 100%;
+            }
+        }
+    }
+    @media screen and (min-width:600px) {
+        .careerCards{
+            flex-direction: column;
+            .careerCard{
+                width: 100%;
+            }
+        }
+    }
+    @media screen and (min-width:1024px) {
+        .careerCards{
+            flex-direction: row;
+            .careerCard{
+                width: calc(33.33% - 20px);
+            }
+        }
+    }
+  }
+  
