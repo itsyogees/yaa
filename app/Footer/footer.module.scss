@@ -34,15 +34,14 @@
   
     .footerLogo {
       text-align: left;
-  
-      h2 {
+    h2 {
         a {
           font-size: 1.5rem;
           font-weight: bold;
           text-decoration: none;
           color: var(--commantext-color);
           display: flex;
-        //   justify-content: center;
+          justify-content: center;
           align-items: center;
           gap: 10px;
           margin-bottom: 0.5rem;
@@ -57,6 +56,9 @@
   
       p {
         font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
   
