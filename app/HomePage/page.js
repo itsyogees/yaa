@@ -10,7 +10,7 @@ const HeroSection = () => {
       <div className={styles.heroContent}>
         <h1>YAA Physiotherapy clinic</h1>
         <p>Pain, mobility and wellness center</p>
-        <h1>ManualTherapy FitnessRehabilitation</h1>
+      
         <div className={styles.heroButtons}>
           <Link href="/services" className={styles.primaryBtn}>
             Learn More
